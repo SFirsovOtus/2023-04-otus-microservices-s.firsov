@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk-alpine
 ARG app_name=hw_01-wrap-app-in-docker-image.jar
 ARG target_file=/target/${app_name}
 ENV app_file=/app/${app_name}

@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
       tags:
-        - health-info-presenter:1.0.0
+        - sfirsovotus/2023-04-otus-microservices-s.firsov:health-info-presenter-1.0.0
     privileged: true
     ports:
       - "8765:8000"

@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - health-info-presenter:1.0.0
+    privileged: true
+    ports:
+      - "8765:8000"
+    networks:
+      - nw
+networks:
+  nw:
